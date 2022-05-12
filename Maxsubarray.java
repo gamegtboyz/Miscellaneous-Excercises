@@ -4,24 +4,7 @@ public class Maxsubarray {
         int[] a = {1, 3, 6, 1, 6, 6, 9, 9};
 
         Solution m = new Solution(a);
-        System.out.println(m.maxSub(a));
-
-        //the code below is to find all subarray whose first and last elements have the same value. Then find the largest possible sum of each subarray.
-        /*
-        int maxsub = 0;
-        for (int i = 0; i < a.length; i++) {
-            for (int j = i; j < a.length; j++) {
-                if (a[i] == a[j]) {
-                    int sum = 0;
-                    for (int k = i; k <= j; k++) {
-                        sum += a[k];
-                    }
-                    if (sum >= maxsub) { maxsub = sum;}
-                }
-            }
-        }
-        System.out.println(maxsub);
-        */
+        System.out.println(m.maxSubArray(a));
     }
 }
 
@@ -29,7 +12,8 @@ class Solution {
     Solution(int[] a) {
         int[] array = a;
     }
-    public int maxSub(int[] array) {
+    //the code below is to find all subarray whose first and last elements have the same value. Then find the largest possible sum of each subarray.
+    public int maxSubArray(int[] array) {
         int maxsub = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = i; j < array.length; j++) {
