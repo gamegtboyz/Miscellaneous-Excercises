@@ -6,7 +6,7 @@ public class Tank {
 
         // the following code is to consider on each blank plot, if the neighborhood plot is under defined condition, we placed the tank on that plot. We call this one as 'planter'
         for (int i = 1; i < c.length; i++) {
-            // in the first elelment consideration we should make sure that if there's a house, the tank should be placed.
+            // in the first element consideration we should make sure that if there's a house, the tank should be placed.
             if (i == 1 && c[i] == '-') {
                 if (c[i-1] == 'H') {
                     c[i] = 'T';
