@@ -1,6 +1,5 @@
 public class Maxsubarray {
     public static void main(String[] args) {
-        //given the [] a, which is array of 2 - 100,000 integers, each integer have the value not excess to 10,000.
         int[] a = {1, 3, 6, 1, 6, 6, 9, 9};
 
         Solution m = new Solution(a);
