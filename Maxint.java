@@ -18,8 +18,7 @@ class Maxint {
         //convert the sorted int[] onto String
         String[] k = new String[input.length];
         for(int i = 0; i < input.length; i++) {
-            k[i] = String.valueOf(input[i]);        
-            //System.out.print(k[i]);
+            k[i] = String.valueOf(input[i]);
         }
         
         //append String
@@ -27,7 +26,8 @@ class Maxint {
         for(int i = 1; i < input.length; i++) {
             t += k[i];
         }
-        //System.out.println(t);
+        
+        // convert appended String onto integer
         int result = Integer.valueOf(t);
         System.out.println(result);
     }
